@@ -1,0 +1,1645 @@
+<DOCTYPE! html>
+<html>
+    
+    <head>
+        <title>Secaucus Doll and Teddy Bear Hospital</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Secaucus Doll and Teddy Bear Hospitall">
+        <meta name="keywords" content="Secaucus Doll and Teddy Bear Hospital, Secaucus, Doll, Teddy Bear, Hospital">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Josefin+Sans|Josefin+Sans:700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            html, body {
+               margin: 0;
+               height: 100%;
+            }
+
+            a, a:active, a:hover, a:visited, a:link {
+                text-decoration:none;
+                border-bottom: 3px solid transparent;
+                font-family: 'Cabin', sans-serif;
+                font-size: 1.5em;
+                font-variant: small-caps;
+                color: black;
+            }
+            
+            li > a:hover {
+                border-bottom: 3px solid black;
+;
+            }
+
+            #logo {
+                width: 20rem;
+                display: inline-block;
+                margin-right: 11vw;
+                border-right: 0vw solid black;
+            }
+            
+            #additional_logo {
+                width:10rem;
+                display: inline-block;
+            }
+            
+            #navB {
+                z-index: 100;
+                padding: 0 2%;
+            }
+            
+            .nav-btn:hover {
+                border: 3px solid white;
+                border-radius: 1rem;
+                box-sizing: border-box;
+            }
+            
+            #yellow_bg {
+                background-color: #FFCE67;
+                position: absolute;
+                width: 70%;
+                height: 100%;
+                left: 30%;
+                display: inline-block;
+                z-index: 1;
+            }
+            
+            #container{
+                position: relative;
+                z-index: 10;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap-reverse;
+                justify-content: space-evenly;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 1.1em;
+                padding-bottom: 4rem;
+                
+            }
+            
+            #diag_and_dreams{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                width: 30%;
+                min-width: 20rem;
+/*                border: 1px solid black;*/
+                
+                
+            }
+            
+            #inner_content {
+                display: inline-block;
+                width: 70%;
+/*                border: 1px solid blue;*/
+/*               background-color: #FFCE67;*/
+                background-color: transparent;
+                
+            }
+            
+            .info-box {
+                width: 20rem;
+                min-width: 15rem;
+                margin: 0.3rem auto;
+                
+                
+            }
+            
+            .info-box-title {
+                background-color: #FFCE67;
+                text-align: center;
+                font-size: 1.2em;
+                padding: 0.1em;
+                border-top: 3px solid #E67B44;
+                border-bottom: 3px solid #E67B44;
+                font-variant: small-caps;
+
+            }
+            
+            .info-box-body {
+                height: 15rem;
+                border-left: 3px solid #AB9A70;
+                border-right: 3px solid #AB9A70;
+                border-bottom: 3px solid #AB9A70;
+                padding: 0.7rem;
+                background-color: #FFFFBF;
+            }
+            
+            .info-box-tiny {
+                width: 100%;
+/*                min-width: 15rem;*/
+                margin: 0.3rem auto;
+                
+                
+            }
+            
+            .info-box-title-tiny {
+                background-color: #FAF6F8;
+                text-align: center;
+                font-size: 1.2em;
+                padding: 0.1em;
+/*                border-top: 3px solid #AB9A70;*/
+                border: 3px solid #395B95;
+                font-variant: small-caps;
+
+            }
+            
+            .info-box-body-tiny {
+                border-left: 3px solid #395B95;
+                border-right: 3px solid #395B95;
+                border-bottom: 3px solid #395B95;
+                padding: 0.7rem;
+                background-color: #38B1E5;
+            }
+            
+            .info-box-title-tiny-mem {
+                background-color: #FAF6F8;
+                text-align: center;
+                font-size: 1.2em;
+                padding: 0.1em;
+
+                border: 3px solid #f0f0f0;
+                font-variant: small-caps;
+
+            }
+            
+            .info-box-body-tiny-mem {
+                border-left: 3px solid #f0f0f0;
+                border-right: 3px solid #f0f0f0;
+                border-bottom: 3px solid #f0f0f0;
+                padding: 0.7rem;
+                background-color: #353839;
+                color: aliceblue;
+            }
+            
+            .info-box-links{
+                width: 20rem;
+                min-width: 15rem;
+                margin: 0.3rem auto;
+                text-align: center;
+                font-variant: small-caps;
+            }
+            
+            .info-box-links a {
+                color: #38B1E5;
+            }
+            
+            .info-box-title {
+                background-color: #FFCE67;
+                text-align: center;
+                font-size: 1.2em;
+                padding: 0.1em;
+                border-top: 3px solid #E67B44;
+                border-bottom: 3px solid #E67B44;
+                font-variant: small-caps;
+
+            }
+            
+            .cont-box {
+                width:80%;
+                margin: auto;
+            }
+            
+            .cont-box-title {
+                border-bottom: 3px solid #E67B44;
+                text-align: center;
+                font-size: 3em;
+            }
+            
+            .cont-box-title-sub {
+                font-size: 1.5em;
+                text-align: center;
+                display: block;
+            }
+            
+            .cont-box-body {
+                font-size: 1em;
+                padding: 1rem;
+            }
+            
+            #contact {
+                text-align: left;        
+            }
+            
+            .contact-header {
+                display: inline-block;
+                width: 11rem;
+                border-bottom: 3px solid #38B1E5;
+                margin: 0.5rem;
+/*                font-size: 1.2rem;*/
+                font-weight: bold;
+            }
+            
+            .drop_dwn {
+                position: relative;
+                z-index: 100;
+            }
+            
+            #map {
+                width:100%;
+                height:100%;
+                max-width: 25rem;
+                max-height: 15rem;
+                position: relative;
+                display: inline-block;
+                margin: auto;
+            }
+            
+            .sticky {
+              position: relative;
+              top: 0;
+              width: 100%;
+            }
+            
+            .highlight {
+                font-variant: small-caps;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            
+            .foot {
+                position: absolute;
+                bottom:0;
+                width: 100%;
+                background-color: #FFFFBF;
+                z-index: 100;
+                height: 4rem;
+            }
+            
+            .empty {
+                position: relative;
+                min-height: 100%;
+            }
+            
+            #carouselExampleIndicators {
+                width: 360px;
+                margin:0 auto;
+                box-sizing: border-box;
+            }
+            
+/*
+            .carousel-item {
+                padding: 2px;
+            }
+*/
+            
+            .carousel-item > img {
+                margin:0 auto;
+                border: 2px solid black;
+                width: 21.5rem;
+                height: 21.5rem;
+                box-sizing: border-box;
+            }
+            
+            .photo_frame {
+                border: 2px solid black;
+                padding: 0.5rem;
+                width: 25rem;
+                background-color: #38B1E5;
+                box-sizing: border-box;
+            }
+            
+            .second_photo_frame {
+                background-color: #3ECBCF;
+                padding: 0.5rem;
+/*                width: 23.5rem;*/
+                margin: auto;
+            }
+            
+            .third_photo_frame {
+                background-color: #F2EFEC;
+                padding: 0.5rem;
+/*                width: 22.5rem;*/
+                margin: auto;
+            }
+            
+            .photo-map-holder {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            
+            .contact-photo {
+                display: inline-block;
+                border: 3px solid #395B95;
+                margin: 1rem;
+                width: 10rem;
+                height: 15rem;
+            }
+            
+/*
+            #team {
+                display: inline-block;
+                width: 20rem;
+                margin: 0.5rem auto;
+            }
+*/
+
+            #team-buttons {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            
+            #team-buttons > button {
+/*                background-color: #38B1E5;*/
+                background-color: #f0f0f0;
+                color: black;
+                margin: 1rem auto;
+                width:20%;
+                min-width: 7rem;
+            }
+            
+            #team-buttons > button:focus {
+                background-color: #FFFFBF;
+            }
+            
+            #team-content {
+                padding: 1rem;
+                background-color: #38B1E5;
+                border: 3px solid #395B95;
+                min-height: 21.6rem;
+                clear: both;
+            }
+            
+            .team-member {
+                clear: both;
+            }
+            
+            .team-photo {
+                width: 19rem;
+                height: 19rem;
+                float: left;
+                margin: 0 1rem 0 0;
+                border: 3px solid #f0f0f0;
+            }
+            
+            .fa-chevron-left, .fa-chevron-right  {
+              color: black;
+            }
+            
+            #home, #about, #contact, #tour, #bef_and_aft, #news{
+                display: none;
+            }
+            
+            .caption-caro {
+                padding: 0.5rem;
+                background-color: #f0f0f0;
+                color: black;
+                border-radius: 0.5rem;
+            
+            }
+            
+            .modal_img {
+                width: 100%;
+            }
+            
+            .modal-body {
+                padding: 0;
+            }
+            
+            #imageModal {
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            
+            .baf {
+                float: left;
+                margin: 1rem;
+                
+            }
+            
+            .photo-container {
+                clear: both;
+            }
+            
+            #bef_and_aft .photo-container {
+                border-top: 3px solid #FFFFBF;
+                padding: 1rem 0;
+                overflow: auto;
+            }
+            
+            #tour .photo_frame {
+                margin: auto;
+            }
+            
+            .baf-caption {
+                    padding: 1rem;
+                    
+                }
+            
+            .video-box {
+                width:80%;
+                margin: 1rem auto;
+            }
+            
+            .video-styles {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                border-top: 3px solid #38B1E5;
+                border-left: 3px solid #38B1E5;
+                border-right: 3px solid #38B1E5;
+                border-bottom: 3px solid #38B1E5;
+            }
+            
+            .video-caption {
+                padding: 0.5rem;
+                background-color: #f0f0f0;
+                border-radius: 0 0 1rem 1rem;
+            }
+            
+            .video-caption-link, .video-caption-link:active, .video-caption-link:hover, .video-caption-link:visited, .video-caption-link:link {
+                font-variant: normal;
+                font-family: 'Josefin Sans', sans-serif;
+                border: none;
+                font-size: 1em;
+                color: #395B95;
+            }
+            
+            .aspect-ratio {
+                padding-top:56.25%;
+                position:relative;
+            }
+            
+            .newspaper {
+                margin: auto;
+            }
+            
+            .modal-only-caption {
+                display: none;
+            }
+            
+/*
+            .home-image-box {
+                background-color: #FFFFBF;
+                padding: 0.5rem;
+                width: 18rem;
+                margin: auto;
+            }
+*/
+            
+            .home-image {
+                margin: 1rem auto;
+                display: block;
+                width:17rem;
+                float: left;
+            }
+            
+            #home-image-text {
+                clear: both;
+                padding: 1rem;
+            }
+            
+            
+            .asterisk {
+                font-family: 'Cabin', sans-serif;
+                font-variant: small-caps;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+                
+            .ribbon {
+                width: 5rem;
+            }
+            
+            /* Tablet ----------- */
+            @media only screen and (max-width : 1024px) {
+                body {
+                    background-color: #FFCE67;
+                }
+                
+                #yellow_bg {
+                    left: 0;
+                    width: 100%; 
+                }
+                
+                .info-box-title {
+                    background-color: #E67B44;
+                    border-left: 3px solid #E67B44;
+                    border-right: 3px solid #E67B44;
+                }
+                
+                #diag_and_dreams {
+                    width: 80%;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-bottom: 5rem;
+                }
+                
+                #navB {
+                    background-color: #FFFFBF;
+                }
+                
+                .container {
+                    background-color: #E67B44;
+                }
+                
+                #inner_content {
+                    width: 100%;
+                }
+                
+                .sticky {
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                }
+                
+                .whitespace {
+                    display: inline-block;
+                    height: 15%;
+                    min-height: 10rem;
+                    background-color: #FFFFBF;
+
+                }
+                
+                #additional_logo {
+                    display: none;
+                }
+                
+                #logo {
+                    width:15rem;
+                    height: auto;
+                }
+                
+                #team-buttons > button {
+                    margin: 0.5rem auto;
+                }
+                
+                .contact-header {
+                    width: 13rem;
+                }
+                
+                .info-box-links a {
+                    color: #395B95;
+                }
+                
+                
+
+            }
+            
+            /* A weird size between phone and tablet ----------- */
+            @media only screen and (max-width : 720px) {
+                .baf {
+                    float: none;
+                }
+                
+                .photo_frame {
+                    display: block;
+                    margin: 0 auto 1rem auto;
+                }
+            }
+            
+            /* Another weird size between phone and tablet ----------- */
+            @media only screen and (max-width : 667px) {
+                
+                .home-image {
+                    margin: 0 auto 1rem auto;
+                    float: none;
+                }
+                
+                .team-photo {
+                    display: block;
+                    margin: 0 auto 1rem auto;
+                    float: none;
+                }
+                
+                .photo_frame {
+                    display: block;
+                    margin: 0 auto 1rem auto;
+                }
+            }
+            
+            
+            /* Smartphones ----------- */
+            @media only screen and (max-width : 480px) {
+                #yellow_bg {
+                    left: 0;
+                    width: 100%;
+                }
+                
+                #navB {
+                    z-index: 100;
+                    padding: 0 1rem;
+                }
+                
+                #logo {
+                    width: auto;
+                    height: 10%;
+                }
+                
+                .whitespace {
+                    display: inline-block;
+                    min-height: 5rem;
+                    height: 12%;
+                    background-color: #FFFFBF;
+
+                }
+                
+                .cont-box#tour, .cont-box#bef_and_aft, .cont-box#news {
+                    width:100%;
+                    margin: auto;
+                }
+                
+                #tour > .cont-box-title, #bef_and_aft > .cont-box-title, #news > .cont-box-title {
+                    width:80%;
+                    margin: auto;
+                }
+                
+                .cont-box-title {
+                    font-size: 1.5em;
+                }
+                
+                .cont-box-body#tour, .cont-box-body#bef_and_aft, .cont-box-body#news {
+                    padding: 0;
+                }
+                
+                #carouselExampleIndicators {
+                    width: 21rem;
+                    margin:0 auto;
+                }
+                
+                .carousel-item > img {
+                    width: 20rem;
+                    height: 20rem;
+                    border: 2px solid black;
+                    box-sizing: border-box;
+                }
+                
+                .photo_frame {
+                    padding: 0;
+                    margin: auto;
+                    border: 3px solid #38B1E5;
+                    width: 21.15rem;
+                }
+
+                .second_photo_frame {
+                    border: 3px solid #3ECBCF;
+                    padding: 0;
+                }
+
+                .third_photo_frame {
+                    border: 3px solid #F2EFEC;
+                    padding: 0;
+                }
+                
+                .team-photo {
+                    width: 100%;
+                    height: auto;
+                }
+                
+                .carousel-inner {
+                    width: 21rem;
+                }
+                
+                .baf {
+                    float: none;
+                    margin: 0 auto;
+                }
+                
+                .contact-header {
+                    display: block;
+                    width: 100%;
+                }
+            }
+    
+        </style>
+    </head>
+
+    <body>
+        <div class="empty">
+            <!--    Background    -->
+
+            <div id="yellow_bg"></div>
+
+            <!--    Nav Bar    -->
+
+            <nav class="navbar navbar-expand-lg navbar-light sticky" id="navB">
+                <a class="navbar-brand logo-container" href="">
+                    <img src="/miscellaneous/revised_logo.png" id="logo">
+                    <img src="/miscellaneous/dh_logo.png" id="additional_logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ni" data-title="home">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item ni" data-title="about">
+                            <a class="nav-link" href="">About Us</a>
+                        </li>
+                        <li class="nav-item ni" data-title="contact">
+                            <a class="nav-link" href="">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Gallery
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right drop_dwn" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item ni" href="" data-title="tour">Hospital Tour</a>
+                              <a class="dropdown-item ni" href="" data-title="bef_and_aft">Before and After</a>
+                              <a class="dropdown-item ni" href="" data-title="news">In the News</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--    Additional WhiteSpace    -->
+
+            <div class="whitespace"></div>
+
+            <!--    Content    -->
+
+            <div id="container">
+                <div id="diag_and_dreams">
+                    <div class="info-box">
+                        <div class="info-box-title">
+                        Get Your Diagnosis
+                        </div>
+                        <div class="info-box-body">
+                            Send us your doll or teddy bear for an immediate diagnostic.
+                            <br>
+                            Secaucus Doll and Teddy Bear Hospital
+                            <br>
+                            161 Front St. Secaucus, NJ, 07094
+                            <br>
+                            Phone: <a href="tel:+12012232332" class="video-caption-link">+1 (201)-223-2332</a>
+                            <br>
+                            Please include a $20 check for insurance and shipping.
+
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-box-title">
+                        Dreams
+                        </div>
+                        <div class="info-box-body">
+                            Bring or send your patient as soon as possible to the Secaucus Doll and Teddy Bear Hospital! We try to keep the original appearance of our visitors as best as possible. And remember: nobody dies in our hands. “The healing power of playing”
+                        </div>
+                    </div>
+                    <div class="info-box-links">
+                        
+                            Follow Us On:
+                        <br>
+
+                        <a href="https://www.facebook.com/pages/Secaucus-Doll-And-Teddy-Bear-Hospital/257487747606123?__tn__=%2CdkC-R-R&eid=ARBl5njIP6R2Adp18KTWixblPIc5_9U5jmASVpfq3rBAbLG9Ag7rpWmp3sknrLwovUzDEAwTrA8jE2EU&hc_ref=ARR2xGyRhqXdq3gwug8teIJwxuznFldI3Y3rQLp3RjyvyYgR1jJObXZl7dRlvHc7gQA&fref=tag">Facebook <i class="fab fa-facebook fa-lg"></i></a>
+                        
+                        &nbsp;
+
+                        <a href="https://www.instagram.com/secaucusdollhospital/">Instagram <i class="fab fa-instagram fa-lg"></i></a>
+                        
+                    </div>
+                </div>
+                <div id="inner_content">
+                    <div class="cont-box" id="home">
+                        <div class="cont-box-title">
+                            Secaucus Doll and Teddy Bear Hospital
+                        </div>
+                        <div class="cont-box-body">
+                            <div class="info-box-tiny">
+                                <div class="info-box-title-tiny">
+                                    Welcome!
+                                </div>
+                                <div class="info-box-body-tiny">
+                                    The director and staff of the Secaucus Doll and Teddy Hospital with over 20 years of experience working for the 
+                                        <span class="highlight">New York Doll Hospital</span>. 
+                                    Thank you for your visit!
+
+                                </div>
+                            </div>
+                            <div class="cont-box-title">
+                                In Memoriam <img src="miscellaneous/cinta.png" class="ribbon">
+                                
+                            </div>
+                            <div id="home-image-text">
+                                <span class="cont-box-title-sub">(July 30th 1951 - February 10th 2019)</span>
+                                <br>
+                                <div class="home-image-box">
+                                    <img src="miscellaneous/luis.jpg" class="team-photo">
+                                </div>
+                                Today, the little store called Secaucus Doll and Teddy Bear Hospital, you can find broken porcelain dolls and torn teddy bears all waiting to be taken care of. The atmosphere is enveloped in an abundance of emotions and passion and greeted by an equal sentiment on behalf of our team. Whom of which have just received a devasting hit after losing doll repair pioneer Luis H. Casas. 
+                                <br>
+                                <br>
+                                After 5 long years of battle with Alzheimer’s, has finally succumbed to the illness. His years of dedication, compassion, and fervor towards his craft have, however, not gone unnoticed and have touched the hearts of all the members of our team. We are forever thankful to have had him in our lives and to be blessed with the knowledge he left behind. For as long as people want to recuperate and maintain the manifestation of their memories and emotions, we the Secaucus Doll and Teddy Bear team will continue to provide help to the world with all the passion and empathy Dr. Casas left us with before his departure.
+                                <br>
+                                <br>
+                                May he forever rest in peace and oversee the future of his legacy. 
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The Green Team
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-box" id="about">
+                        <div class="cont-box-title">
+                            About Us
+                        </div>
+                        <div class="cont-box-body"> 
+                            <img src="miscellaneous/about_photo.jpg" class="team-photo">
+                            As far as I can remember, I have always been surrounded by dolls. My Childhood and adult life have passed by with memories of many, many dolls and teddy bears.
+                            <br>
+                            <br>
+                            My mother worked at home as a doll dressmaker for a big doll factory in Bogota Colombia . I recall watching her while she was making patterns, sewing dresses and talking to her momentary friends .... "DOLLS".....at the same time. 
+                            <br>
+                            <br>
+                            During school vacations I worked at the production plant for the same doll factory my mother used to work.
+                            I wanted to be a real doctor; I had passion for medicine, but at that time it was very expensive to attend and study it at a university, and there was no financial aid available. 
+                            <br>
+                            <br>
+                            After I graduated from high school, I studied business administration and worked full time at the doll factory. 
+                            <br>
+                            <br>
+                            Combining my taste for medicine and the experience in administration, production and marketing of dolls, I followed my brother's idea about starting a “CLINICA DE MUNECOS” Doll hospital.
+                            And that is exactly what we did. And now it is rewarding to say that from the early seventies we have kept most of our family members busy working at the “Clinica de Muñecos Casas Reyes” in Bogota , Colombia . 
+                            <br>
+                            <br>
+                            During my first visit to N.Y. in 1986 I had a big surprise: I found out about “THE N.Y. DOLL HOSPITAL” in Manhattan , a place very familiar to my own, thousands of miles away from home. 
+                            <br>
+                            <br>
+                            I decided to meet with Irving Chais, the owner, and we kept in touch for a while until we started working together the following year. 
+                            <br>
+                            <br>
+                            These last 20 years of more experience at THE NEW YORK DOLL HOSPITAL; gave me new ideas, knowledge, techniques, materials and some '' tricky treatments for .........tricky sickness".  All together have full-filled my personal and professional life. 
+                            <br>
+                            <br>
+                            SECAUCUS DOLL AND TEDDY BEAR HOSPITAL 
+                            <br>
+                            <br>
+                            Dr. LUIS H. CASAS
+                            <br>
+                            Director.
+                            <br>
+                            <br>
+                            
+                            <div class="cont-box-title">
+                                Meet the Team
+                            </div>
+                            <div id="team-buttons">
+                                <button type="button" class="btn" data-name="ines">Ines</button>
+                                <button type="button" class="btn" data-name="jeannette">Jeannette</button>
+                                <button type="button" class="btn" data-name="alba">Alba</button>
+                                <button type="button" class="btn" data-name="sara">Sara</button>
+                            </div>
+                        <div id="team-content">
+                            <div id="ines" class="team-member">
+                                <img alt="Photo" class="team-photo" src="team_photos/ines.jpg">
+                                <span> There is no one else who loves and knows this fantastic profession (Doll Doctor) better than my wife: Ines. 
+                                    <br>
+                                Throughout the years of companionship, work, good times and rainy days she has been my support. Next to me she has learned the whole operation; she is the best when taking care of rotten skins, doll and animal stuffing, and wigs. Her skills as a professional hairdresser have given her a very well-known reputation; in fact many parents and guardians call her the “Miracle hair Lady” they say, and I agree: “she is the only one who can add that final touch that makes the difference”.</span>
+                            </div>
+                            
+                            <div id="jeannette" class="team-member">
+                                <img alt="Photo" class="team-photo" src="team_photos/jeannette.jpg">
+                                <span> The oldest of our children; Jeannette, studied Pre-school education; and while attending college she found the doll hospital to be a very special place where she learned and gained experience in the wonderful world of dolls. This excellent colleague has become an expert decorating our patients' bodies and faces, and also has mastered our plastic surgery techniques.</span>
+                            </div>
+                            
+                            <div id="alba" class="team-member">
+                                <img alt="Photo" class="team-photo" src="team_photos/alba.jpg">
+                                <span> My sister in-law.
+                                She's incredible! a cloth designer who worked for a top fashion company earlier, now loves and enjoys making outfits and clothing complements for patients who are still recuperating from surgery as well as for those getting ready to go home. Her extraordinary skills allow you to choose from a variety of styles to make all kinds of clothing.</span>
+                            </div>
+                            
+                            <div id="sara" class="team-member">
+                                <img alt="Photo" class="team-photo" src="team_photos/sara.jpg">
+                                <span> Of Mexican Nationality; Sara loves her work and specializes in repairing all kinds of stuffed animals using her exceptional sewing skills. Shes is very much dedicated to ensuring her patients are treated with the upmost care. Her skill set and experience makes sure that our patients can go home and live a long and prosperous life with their family.</span>
+                            </div>
+                        </div>
+                            
+                        </div>
+                    </div>
+                    <div class="cont-box" id="contact">
+                        <div class="cont-box-title">
+                            Contact Us
+                        </div>
+                        <div class="cont-box-body">
+                            <span class="contact-header">Phone:</span> <a href="tel:+12012232332" class="video-caption-link">+1 (201)-223-2332</a>
+                            <br>
+                            <span class="contact-header">Address:</span> 161 Front St. Secaucus, NJ, 07094
+                            <br>
+                            <span class="contact-header">Email:</span> <a class="video-caption-link" href="mailto:SecaucusDollHospital@gmail.com?Subject=Repair%20Request">SecaucusDollHospital@gmail.com</a>
+                            <br>
+                            <span class="contact-header">Hours Of Operation:</span> Tuesday - Saturday [10:30 am to 5:00 pm]
+                            <br>
+                            <br>
+                            <div class="asterisk">We Specialize in Doll Clothes/Wigs, Stuffed Animal Repair, and Antique Doll Restoration</div>
+                            <br>
+                            
+                            <div class="photo-map-holder">
+                                <img src="miscellaneous/luis_telefono.jpg" class="contact-photo">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1312.3676852927629!2d-74.05937932358125!3d40.79138029883114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5d304e350982a16!2sSecaucus+Doll+%26+Teddy+Bear!5e0!3m2!1sen!2sus!4v1547182355123" frameborder="0" style="border:0" allowfullscreen id="map"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-box" id="tour">
+                        <div class="cont-box-title">
+                            Hospital Tour
+                        </div>
+                        <div class="cont-box-body">
+                            Please enjoy a tour of our Doll and Teddy Bear Hospital through the narrative lens of this photo gallery!
+                            <br>
+                            <div class="photo_frame">
+                                <div class="second_photo_frame">
+                                    <div class="third_photo_frame">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="tour_photos/tour1.jpg">
+                                                    <div class="carousel-caption">
+                                                        <span class="caption-caro">A Visit To The Doll Hospital</span>
+                                                      </div>
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour2.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour3.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour4.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour5.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour6.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour7.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour8.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour9.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour10.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour11.jpg">
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <img src="tour_photos/tour12.jpg">
+                                                </div>
+
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="cont-box" id="bef_and_aft">
+                        <div class="cont-box-title">
+                            Before and After
+                        </div>
+                        <div class="cont-box-body">
+                            In our Before and After Gallery, check out how after a bit of treatment our patients come out looking like new! In our process, we try to preserve as much of the original color and composition of our patients. 
+                            <br>
+                            <br>
+                            
+                            <!-- Pinochio -->
+                            <div class="photo-container">
+                                <div class="photo_frame baf">
+                                    <div class="second_photo_frame">
+                                        <div class="third_photo_frame">
+                                            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="before_and_after_modified/a1.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">Before</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item ">
+                                                        <img src="before_and_after_modified/a2.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">After</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="baf-caption">
+                                    Our patient Pinocchio was 30-40 years old when he arrived at our Doll and Teddy Bear Hospital. His outer shell consisted of a blend of wood and sawdust, and carried a fine coat of paint that had cracked and become discolored. We gave Pinocchio a new coat of paint, doing our best to use colors that matched the original. With some additional internal repair work to fix cracked wood, Pinocchio left our doll hospital ready for a long life with his family.
+                                </div>
+                            </div>
+                            
+                            <!-- Bear -->
+                            <div class="photo-container">
+                                <div class="photo_frame baf">
+                                    <div class="second_photo_frame">
+                                        <div class="third_photo_frame">
+                                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="before_and_after_modified/b1.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">Before</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/b2.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">In Progress</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/b3.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">After</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="baf-caption">
+                                    This bear came into our doll hospital with many rips and tears that needed immediate attention. When we repair any stuffed animal, our priority is to keep as much of the original material as possible and patch holes using like materials so that the outer shell looks cohesive. After some patchwork and detailed sewing, this bear left looking like new!
+                                </div>
+                            </div>
+                            
+                            <!-- Baby Blk -->
+                            <div class="photo-container">
+                                <div class="photo_frame baf">
+                                    <div class="second_photo_frame">
+                                        <div class="third_photo_frame">
+                                            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                                    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="before_and_after_modified/c1.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">Before</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/c2.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">A Closer Look</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/c3.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">After</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="baf-caption">
+                                This baby doll entered our doll hospital with damages on its clothing, paint discoloration, and some grime that had built up. After a bath, a repaint, some patchwork done on its clothes, and a complete remake of its shirt, this baby doll was ready for his family.
+                            </div>
+                                
+                            </div>
+                            
+                            <!-- Bunny -->
+                            <div class="photo-container">
+                                <div class="photo_frame baf">
+                                    <div class="second_photo_frame">
+                                        <div class="third_photo_frame">
+                                            <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                                                    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                                                    <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+                                                    <li data-target="#carouselExampleIndicators4" data-slide-to="4"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="before_and_after_modified/d1.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">Before</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/d2.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">A Closer Look</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/d3.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">A Closer Look (2) </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/d4.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">A Closer Look (3) </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/d5.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">After</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="baf-caption">
+                                This bunny came into our doll hospital with a lot of outer damage, and lacked good structual integrity because of it. In approaching the repair, it was decided that a large portion of the lower body would be replaced so that the bunny would be more durable, and in the upper body we would patch as much as we could. After a few weeks of hand stitching and custom clothes creation, this bunny was once again ready for play!
+                            </div>
+                        </div>
+                                                   
+                            <!-- Bear 2 -->
+                            <div class="photo-container">
+                                <div class="photo_frame baf">
+                                    <div class="second_photo_frame">
+                                        <div class="third_photo_frame">
+                                            <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                                                    <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="before_and_after_modified/e1.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">Before</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/e2.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">After (1)</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/e3.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">After (2)</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                                <div class="baf-caption">
+                                    This bear came into our doll hospital with many missing materials on its nose, eyes, hands, and feet that needed a custom sewing. In the repair process, we ensured that the bear would be able to stand once again by amply replacing the inner stuffing. And under the request of the owner, a custom shirt was made, and with that the bear's stay at the doll hospital was complete.
+                                </div>
+                            </div>
+                                
+                            <!-- Dinosaur -->
+                            <div class="photo-container">
+                                <div class="photo_frame baf">
+                                    <div class="second_photo_frame">
+                                        <div class="third_photo_frame">
+                                            <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="before_and_after_modified/f1.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">Before</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="carousel-item">
+                                                        <img src="before_and_after_modified/f2.png">
+                                                        <div class="carousel-caption">
+                                                            <span class="caption-caro">After</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="baf-caption">
+                                    This dinosaur came into our doll hospital with obvious damage to its structual integrity as its upper body had many tears making it barely able to hold the dinosaur together. In our repair process, we made a new upper body out of a stronger fabric to ensure durability and filled holes in areas on its limbs to complete the restore. 
+                                </div>
+                                
+                            </div>
+                            
+                        
+                        
+                        </div>
+                    </div>
+                    <div class="cont-box" id="news">
+                        <div class="cont-box-title">
+                            In The News
+                        </div>
+                        <div class="cont-box-body">
+                            <div class="video-box">
+                                <div class="aspect-ratio">
+                                    <iframe src="https://player.vimeo.com/video/179740708" class="video-styles" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                                <div class="video-caption">
+                                        <a href="https://vimeo.com/179740708" class="video-caption-link">Preserving Memory at The Secaucus Doll and Teddy Bear Hospital</a> by <a href="https://vimeo.com/user52244683" class="video-caption-link">Emily Siegel</a> on Vimeo (2017)
+                                </div>
+                            </div>
+                            
+                            <div class="video-box">
+                                <div class="aspect-ratio">
+                                    <iframe class="video-styles" src="https://www.youtube.com/embed/75M2tUgXVoE" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-caption">
+                                    <a href="https://www.nj.com/hudson/index.ssf/2008/08/video_secaucus_hospital_mends.html" class="video-caption-link"> Secaucus 'hospital' mends dolls, teddy bears</a> by The Jersey Journal (2008)
+                                </div>
+                            </div>
+                        
+                            <div class="video-box">
+                                <div class="aspect-ratio">
+                                    <iframe class="video-styles" src="https://www.youtube.com/embed/9Q8dJsu4SyQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-caption">
+                                    <a href="https://www.nj.com/hudson/index.ssf/2008/08/video_secaucus_hospital_mends.html" class="video-caption-link"> Romantic man gives fiancée Christmas surprise by finding her long-lost childhood teddy bear</a> by The Mirror UK (2014)
+                                </div>
+                            </div>
+                            
+                            <div class="video-box">
+                                <div class="aspect-ratio">
+                                    <iframe class="video-styles" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fluis.casas.33821%2Fvideos%2F1039403366111344%2F&show_text=0&width=560" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-caption">
+                                    <a href="https://www.telemundo.com/shows/2016/01/06/el-hospital-de-munecas-y-peluches-sorprendio-dos-ninos-parte-1-de-2" class="video-caption-link"> El hospital de muñecas y peluches sorprendió a dos niños</a> by Telemundo (2016)
+                                </div>
+                            </div>
+                            
+                            <br>
+                            
+                            <div class="photo_frame newspaper">
+                                <div class="second_photo_frame">
+                                    <div class="third_photo_frame">
+                                        <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel" data-interval="false">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                                                <li data-target="#carouselExampleIndicators6" data-slide-to="3"></li>
+
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="newspapers/news1.png">
+                                                    <div class="carousel-caption">
+                                                        <span class="caption-caro">
+                                                            Septimo Dia
+                                                            <span class="modal-only-caption"> |
+                                                                <a href="newspapers/news1.pdf" class="video-caption-link"> PDF HERE </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="newspapers/news2.png">
+                                                    <div class="carousel-caption">
+                                                        <span class="caption-caro">
+                                                            The Star-Ledger
+                                                            <span class="modal-only-caption"> |
+                                                                <a href="newspapers/news2.pdf" class="video-caption-link"> PDF HERE </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="newspapers/news3.png">
+                                                    <div class="carousel-caption">
+                                                        <span class="caption-caro">
+                                                            New York
+                                                            <span class="modal-only-caption"> |
+                                                                <a href="newspapers/news3.pdf" class="video-caption-link"> PDF HERE </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="newspapers/news4.png">
+                                                    <div class="carousel-caption">
+                                                        <span class="caption-caro">
+                                                            Siete Dias
+                                                            <span class="modal-only-caption"> |
+                                                                <a href="newspapers/news4.pdf" class="video-caption-link"> PDF HERE </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                                                <i class="fas fa-chevron-left"></i>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hospital Tour</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="tour_photos/tour1.jpg" class="modal_img">
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <div class="footer-caption"> A Visit To The Doll Hospital </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="foot">
+                <div class="footer-copyright text-center py-3">
+                    2010 © All Rights Reserved
+                </div>
+            </footer>
+        </div>
+
+        
+        <!--    Bootstrap Scripts    -->
+        
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <!--    Custom Scripts    -->
+        
+        <script>
+            $(document).ready(() => {
+                
+                // Sets ROOT_URL for tab query later
+                let URL = window.location.href;
+                let index = -1;
+                let slash = 0;
+                for(let i = 0; i < URL.length; i++){
+                    if(URL[i] === "/"){
+                        slash += 1;
+                    }
+                    if(slash === 3){
+                        index = i + 1;
+                        break;
+                    }
+                }
+                
+                const ROOT_URL = (index != -1) ? URL.slice(0, index) : "http://secaucusdollhospital.com/";
+                
+                // Makes Links Equivalent to Buttons
+                $("a.nav-link").click((event) => {
+                    event.preventDefault();
+                });
+                
+                // Allows all images to toggle modal
+                $(".carousel-item > img").attr({"data-toggle" : "modal",  "data-target" : "#imageModal"});
+                
+                // Hides all hidden captions
+                $(".modal-only-caption").hide();
+                
+                // Redirects Depending on Query String
+                let urlParams = new URLSearchParams(window.location.search);
+                let tab = urlParams.get("tab");
+                let valid_tabs = ["home", "about", "contact", "tour", "bef_and_aft", "news"];
+                
+                if(urlParams.has("tab") && valid_tabs.includes(tab)){
+                    let li_query = ".ni[data-title='" + tab + "']";
+                    $(li_query).addClass("active");
+                    
+                    let cont_box_id = "#" + tab;
+                    $(cont_box_id).show();
+                    
+                    if(tab === "about"){
+                        $("#team").show();
+                    } else if(tab === "tour"){
+                        $(".modal-title").html("Hospital Tour");
+                    } else if(tab === "bef_and_aft"){
+                        $(".modal-title").html("Before and After Gallery");  
+                    } else if(tab === "news"){
+                        $(".modal-title").html("In The News");  
+                    } else {
+                        $("#team").hide();
+                    }
+                    
+                } else {
+                    let home_query = "li.nav-item.ni[data-title='home']";
+                    console.log(home_query);
+                   $(home_query).addClass("active");
+                    
+                    let home_cont_box_id = "#home";
+                    $(home_cont_box_id).show();
+                }
+                
+                // Lets Navigation Links Show Other Content Without Reloading
+                $(".ni").click((event) => {
+                    let title = event.currentTarget.dataset.title;
+                    
+                    if(event.currentTarget.classList.contains("active") === false){
+                        $(".ni.active").removeClass("active");
+                        $(event.currentTarget).addClass("active");
+
+                        let new_url = ROOT_URL + "?tab=" + title;
+                        history.pushState(null, "Secaucus Doll and Teddy Bear Hospital", new_url);
+                        
+                        if(title === "about"){
+                            $("#team").show();
+                        } else {
+                            $("#team").hide();
+                        }
+                    }
+                    
+                    $(".cont-box").hide();
+                    let query = "#" + title;
+                    console.log(query);
+                    $(query).show();
+                    $("body").scrollTop(0);
+                    if(window.innerWidth <= 1024){
+                        $(".navbar-toggler").click();
+                    }
+                    
+                });
+                
+                // Defaults to Ines for Team Member
+                $(".team-member").hide();
+                $("#ines").show();
+                
+                // Lets Team Buttons Change Content in Team Content Container
+                $("#team-buttons > button").click((event) => {
+                    $(".team-member").hide();
+                    let team_member = "#" + event.currentTarget.dataset.name;
+                    $(team_member).fadeIn(1000);
+                });
+                
+                // On Desktop size, lets Diagnosis and Dreams Section follow the screen
+                $(window).scroll(() => {
+                    if(window.innerWidth > 1024){
+                        let curr_scroll = $(this).scrollTop();
+                        if(curr_scroll > 140){
+                            $("#diag_and_dreams").css("padding-top", curr_scroll - 140);
+                        } else {
+                            $("#diag_and_dreams").css("padding-top", 0);
+                        }
+                    }
+                });
+                
+
+                
+                // Sets Up Modal for Focused View Of Gallery Photos
+                $(".carousel-item > img").click((event) => {
+                    let img_src = $(event.target).attr("src");
+                    $(".modal_img").attr("src", img_src);
+                    let img_caption = $(event.target).siblings().children(".caption-caro");
+                    
+                    let hidden = img_caption.children(".modal-only-caption").html();
+                    
+                    let img_caption_inner = hidden != undefined ? img_caption.html() + hidden : img_caption.html();
+                    $(".modal-footer > .footer-caption").html(img_caption_inner);
+                });
+                
+            });
+        
+        </script>
+        
+    </body>
+    
+</html>
