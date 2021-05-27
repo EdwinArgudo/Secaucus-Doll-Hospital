@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Doll and Teddy Bear Hospital</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Doll and Teddy Bear Hospital">
+        <meta name="keywords" content="Doll and Teddy Bear Hospital, Secaucus, Doll, Teddy Bear, Hospital">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./imgs/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="./imgs/favicon/favicon-16x16.png" sizes="16x16" />
+        <!--load all styles -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="./fontawesome/css/all.css" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+        <script src="styles.js" type="text/javascript" defer></script>
+        <!-- Components -->
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="components/footer.js" type="text/javascript" defer></script>
+        <script src="components/announcement.js" type="text/javascript" defer></script>
+        <script src="components/blog-item.js" type="text/javascript" defer></script>
+        <script src="components/main.js" type="text/javascript" defer></script>
+        <script src="components/welcome-banner.js" type="text/javascript" defer></script>
+        <script src="components/section-header.js" type="text/javascript" defer></script>
+        <script src="components/section-content.js" type="text/javascript" defer></script>
+        <script src="components/polaroid.js" type="text/javascript" defer></script>
+        <script src="components/biography.js" type="text/javascript" defer></script>
+        <script src="components/label.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <dh-announcement>COVID-19 Update: Back in Business! Check our Home Page for more details!</dh-announcement>
+        <dh-header active="contact"></dh-header>
+        <dh-main>
+            <dh-section-header>Get Your Diagnosis!</dh-section-header>
+            <dh-section-content>
+                <h5>
+                    Send us your doll or teddy bear for an immediate diagnosis.
+                </h5>
+                <h5>
+                    ** Please include a $20 check for insurance and shipping. **
+                </h5>
+            </dh-section-content>
+            <div class="spacer"></div>
+            <dh-section-header>Our Contact Info</dh-section-header>
+            <dh-section-content>
+                <div id="contact-container" class="d-flex flex-row flex-wrap w-100 justify-content-between">
+                    <div id="contact-info" class="d-flex flex-column justify-content-around">
+                        <dh-label>
+                            <span slot="title"><i class="fas fa-mobile text-yellow" style="width: 50px;"></i> Phone Number</span>
+                            <span slot="body">
+                                <a href="tel:+12013144573">+1 (201)-314-4573</a>
+                            </span>
+                        </dh-label>
+                        <dh-label>
+                            <span slot="title"><i class="fas fa-store text-yellow" style="width: 50px;"></i> Address</span>
+                            <span slot="body">
+                                161 Front St. Secaucus, NJ, 07094
+                            </span>
+                        </dh-label>
+                        <dh-label>
+                            <span slot="title"><i class="fas fa-paper-plane text-yellow" style="width: 50px;"></i> Email</span>
+                            <span slot="body">
+                                <a class="video-caption-link" href="mailto:SecaucusDollHospital@gmail.com?Subject=Repair%20Request">SecaucusDollHospital@gmail.com</a>
+                            </span>
+                        </dh-label>
+                        <dh-label>
+                            <span slot="title"><i class="fas fa-clock text-yellow" style="width: 50px;"></i> Hours Of Operation</span>
+                            <span slot="body">
+                                Tuesday - Saturday [10:30 am to 5:00 pm]
+                            </span>
+                        </dh-label>
+                    </div>
+
+                    <dh-polaroid rotate="4" src="./imgs/miscellaneous/luis_telefono.jpg" styleId="4">
+                        Give Us A Call
+                    </dh-polaroid>
+                </div>
+
+                <iframe class="my-4" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6041.369162109099!2d-74.059444!3d40.790948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5d304e350982a16!2sSecaucus%20Doll%20%26%20Teddy%20Bear!5e0!3m2!1sen!2sus!4v1620274027466!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </dh-section-content>
+        </dh-main>
+        <dh-footer></dh-footer>
+    </body>
+</html>

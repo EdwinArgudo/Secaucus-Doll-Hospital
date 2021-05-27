@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Doll and Teddy Bear Hospital</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Doll and Teddy Bear Hospital">
+        <meta name="keywords" content="Doll and Teddy Bear Hospital, Secaucus, Doll, Teddy Bear, Hospital">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./imgs/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="./imgs/favicon/favicon-16x16.png" sizes="16x16" />
+        <!--load all styles -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="./fontawesome/css/all.css" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+        <script src="styles.js" type="text/javascript" defer></script>
+        <!-- Components -->
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="components/footer.js" type="text/javascript" defer></script>
+        <script src="components/announcement.js" type="text/javascript" defer></script>
+        <script src="components/blog-item.js" type="text/javascript" defer></script>
+        <script src="components/main.js" type="text/javascript" defer></script>
+        <script src="components/welcome-banner.js" type="text/javascript" defer></script>
+        <script src="components/section-header.js" type="text/javascript" defer></script>
+        <script src="components/section-content.js" type="text/javascript" defer></script>
+        <script src="components/polaroid.js" type="text/javascript" defer></script>
+        <script src="components/biography.js" type="text/javascript" defer></script>
+        <script src="components/label.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <dh-announcement>COVID-19 Update: Back in Business! Check our Home Page for more details!</dh-announcement>
+        <dh-header active="news"></dh-header>
+        <dh-main>
+            <dh-section-header>In the News</dh-section-header>
+            <dh-section-content>
+                <dh-blog-item type="bg-primary">
+                    <span slot="title">Preserving Memory at The Secaucus Doll and Teddy Bear Hospital </span>
+                    <span slot="subtitle">
+                        By Emily Siegel on Vimeo (2017)
+                    </span>
+                    <span slot="body">
+                        <iframe class="video-styles" src="https://player.vimeo.com/video/179740708" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </span>
+                </dh-blog-item>
+                <dh-blog-item type="bg-primary">
+                    <span slot="title">El hospital de muñecas y peluches sorprendió a dos niños</span>
+                    <span slot="subtitle">
+                        By Telemundo (2016)
+                    </span>
+                    <span slot="body">
+                        <iframe class="video-styles" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fluis.casas.33821%2Fvideos%2F1039403366111344%2F&show_text=0&width=560" frameborder="0" allowfullscreen></iframe>
+                    </span>
+                </dh-blog-item>
+                <dh-blog-item type="bg-primary">
+                    <span slot="title">Romantic man gives fiancée Christmas surprise by finding her long-lost childhood teddy bear</span>
+                    <span slot="subtitle">
+                        By The Mirror UK (2014)
+                    </span>
+                    <span slot="body">
+                        <iframe class="video-styles" src="https://www.youtube.com/embed/9Q8dJsu4SyQ" frameborder="0" allowfullscreen></iframe>
+                    </span>
+                </dh-blog-item>
+                <dh-blog-item type="bg-primary">
+                    <span slot="title">Secaucus 'hospital' mends dolls, teddy bears </span>
+                    <span slot="subtitle">
+                        By The Jersey Journal (2008)
+                    </span>
+                    <span slot="body">
+                        <iframe class="video-styles" src="https://www.youtube.com/embed/75M2tUgXVoE" frameborder="0" allowfullscreen></iframe>
+                    </span>
+                </dh-blog-item>
+            </dh-section-content>
+        </dh-main>
+        <dh-footer></dh-footer>
+    </body>
+</html>
