@@ -95,7 +95,7 @@ footer {
         <div id="left-eye" class="dot"></div>
         <div id="right-eye" class="dot"></div>
     </div>
-    <span id="copyright-msg" class="text-charcoal">© 2010</span>
+    <span id="copyright-msg" class="text-charcoal">© ${new Date().getFullYear()}</span>
 </footer>
 `;
 
