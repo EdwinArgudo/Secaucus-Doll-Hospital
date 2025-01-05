@@ -9,9 +9,6 @@ biographyTemplate.innerHTML = `
 #photo {
     height: 100%;
 }
-#caption {
-    overflow-y: scroll;
-}
 @media (max-width: 767.98px) {
     #photo-container {
         height: auto;
