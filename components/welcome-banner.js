@@ -32,7 +32,7 @@ welcomeBannerTemplate.innerHTML = `
             <a href="contact.html">Contact Page</a>
             to find our info. With over 20 years of experience working for the 
             <span id="ny-dh" class="text-orange">New York Doll Hospital</span>, 
-            the staff of the Secaucus Doll and Teddy Hospital will treat your patient with the upmost care.
+            the staff of the Secaucus Doll and Teddy Hospital will treat your patient with the utmost care.
         </span>
     </div>
 </div>
